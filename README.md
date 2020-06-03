@@ -10,7 +10,7 @@ Per rendere le storie private il Prof ha consigliato di usare due archivi divers
 
 ## V0.1
 
-- Player: semplice, riceve il json contenente tutta la storia
+- Player: semplice, riceve il JSON contenente tutta la storia
 - Scopo: iniziare a creare un semplice layout del player SOLO PC
 
 ## V0.2
@@ -20,6 +20,6 @@ Per rendere le storie private il Prof ha consigliato di usare due archivi divers
 
 ## V0.3
 
-- Storie: upload su DB
-- Player: creazione di un sistema per prendere le quest dal DB
-- Scopo: creazione DB di supporto su cui salvare le quest
+- Storie: upload su DB o file JSON
+- Player: creazione di un sistema per prendere le quest dal DB/JSON
+- Scopo: creazione DB di supporto su cui salvare le quest o organizzare un sistema dove salvare i file JSON
