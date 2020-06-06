@@ -26,7 +26,7 @@ Per rendere le storie private il Prof ha consigliato di usare due archivi divers
 
 ## Possibile esempio file JSON
 
-```
+```JSON
 {
 "titolo":"Titolo storia",
   "Descrizione": "Breve descrizione",
