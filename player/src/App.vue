@@ -2,19 +2,31 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to ="/quiz">Quiz</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&&display=swap'); 
+*{
+    padding:0px;
+    border:0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+body{
+    background-color: #252C4A;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
 }
 
 #nav {
@@ -23,10 +35,11 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
