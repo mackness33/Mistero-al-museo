@@ -8,25 +8,27 @@ Per rendere le storie private il Prof ha consigliato di usare due archivi divers
 - Indizi
 - Divise in task
 
-## V0.1
+## Player
 
-- Player: semplice, riceve il JSON contenente tutta la storia
-- Scopo: iniziare a creare un semplice layout del player SOLO PC
+Le varie versioni del player
 
-## V0.2
-
-- Storie: più complesse con scelta multipla
-- Scopo: iniziare a creare un sistema che colleghi le varie quest tra di loro
-
-## V0.3
-
-- Storie: upload su DB o file JSON
-- Player: creazione di un sistema per prendere le quest dal DB/JSON
-- Scopo: creazione DB di supporto su cui salvare le quest o organizzare un sistema dove salvare i file JSON
+- V0.1
+  - Interfaccai semplice, il player riceve il JSON contenente qualche domanda
+  - Scopo: iniziare a creare un semplice layout del player SOLO PC
+- V0.2
+  - Controllo risposte sbagliate + notifica errori
+- V0.3
+  - Storie: più complesse con scelta multipla
+  - Scopo: iniziare a creare un sistema che colleghi le varie quest tra di loro
+- V0.4
+  - Aggiunta del caso **guardia arrabbiata** e un indicatore rabbia (?)
+- V0.5
+  - Interfacciarsi con API per prendere il file JSON **completo** (l'utente deve poter "giocare" anche **senza** internet)
+  - Scopo: creare un sistema di interfacciatra back-end e front-end
 
 ## Possibile esempio file JSON
 
-```JSON
+````JSON
 {
 "titolo":"Titolo storia",
   "Descrizione": "Breve descrizione",
@@ -72,3 +74,4 @@ Per rendere le storie private il Prof ha consigliato di usare due archivi divers
   },
   ]
 }```
+````
