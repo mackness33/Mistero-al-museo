@@ -31,6 +31,7 @@ div#quiz h2{
 div#quiz h2#domanda{
     border-bottom: 20%;
 }
+
 div.row{
     border-radius: 20px;
     padding: 15px;
@@ -39,22 +40,21 @@ div.row{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-
-    flex-grow: 1;
-    
-    
+    flex-grow: 1; /* in questo modo ogni riga occupa il massimo spazio disponibile*/ 
 }
 div#risposte{
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
 }
+div.row label{
+    display: inline-block;
+}
 div#risposte .row, div#risposte .row label{
     cursor: pointer;
 }
-div.row input{
-    margin: 0;
-    visibility: hidden;
+div.row input[type="radio"]{
+    display: none;
 }
 div.row, .check{
     border: 4px solid #23476A;
@@ -63,15 +63,22 @@ div.row, .check{
 	width: 25px; 
 	height: 25px;
     border-radius: 50%;
-    margin-left: auto;
+    margin-left: auto; /* l'icona è sempre a destra */
 }
 button#invia{
-    justify-content: flex-end;
     color: white;
-    font-weight: 600;
+    background-color: #117EEB;
+    cursor: pointer;
+    outline: 0;
     font-size: large;
-    border-radius: 50px;
-    padding: 25px 50px;
-    background-color: #2088EF;
-    
+    border-radius: 20px;
+    padding: 25px 50px;   
+}
+
+button#invia:active, div.row:hover{
+    opacity: 0.8;
+}
+div.row input[type="radio"]:checked + div{
+    background-color: #117EEB;
+    border: 4px solid #117EEB;
 }
