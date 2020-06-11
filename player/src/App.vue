@@ -24,18 +24,20 @@ body{
 
 #app {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  -moz-osx-font-smoothing: grayscale; 
   color: white;
 }
 
 #nav {
   padding: 30px;
+  text-align: center;
+  
 }
 
 #nav a {
   font-weight: bold;
   text-decoration: none;
+  color: inherit;
 }
 
 #nav a.router-link-exact-active {

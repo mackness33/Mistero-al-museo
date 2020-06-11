@@ -1,16 +1,19 @@
 <template>
     <div id="quiz">
-            <h2>Domanda 1</h2>
-            <h3 id="domanda">Lorem ipsum dolor sit amet, consectetur?</h3>
+            <h2>Domanda {{id+1}}</h2>
+            <h3>{{domanda.titolo}}</h3>
+            <p v-if="error" class="error-message">Risposta <b>sbagliata</b></p>
             <div id="risposte">
-                <div class="row" @click="check_this($event)"><label for="1733">adipiscing elit, sed do eiusmod</label><input type="radio" name="data" value="1733"><div class="check"></div></div>                   
-                <div class="row" @click="check_this($event)"><label for="1775">tempor incididunt ut labore et dolore magna aliqua</label><input type="radio" name="data" value="1775"><div class="check"></div></div>                    
-                <div class="row" @click="check_this($event)"><label for="1789">Ut enim ad minim veniam, quis nostrud exercitatio</label><input type="radio" name="data" value="1789"><div class="check"></div></div>               
-                <div class="row" @click="check_this($event)"><label for="1789">Ut enim </label><input type="radio" name="data" value="1789"><div class="check"></div></div>               
-                <div class="row" @click="check_this($event)"><label for="1789">Ut enim </label><input type="radio" name="data" value="1789"><div class="check"></div></div>               
+                <div class="row" @click="select_this($event, risposta.ID)" v-for="risposta in domanda.risposte" v-bind:key="risposta.ID" >
+                    <label v-bind:for="risposta.ID">{{risposta.titolo}}</label>
+                    <input type="radio" name="data" v-model="radioSel" v-bind:value="risposta.ID">
+
+                    <div class="check"></div>
+                </div>                                  
+
             
             </div>
-            <button id="invia">Invia</button>
+            <button id="invia" @click="verify()">Invia</button>
     </div>
 </template>
 
@@ -19,12 +22,37 @@
 export default {
     name:"Domanda",
     methods:{
-        check_this(event){
+        //verifico se la risposta selezionata è giusta
+        verify(){
+            this.error = !this.domanda.risposte[this.radioSel].valore;
+            if(!this.error){
+                this.$emit("answer",this.wrongAnswer);
+            }else{
+                //segno il numero degli errori 
+                this.wrongAnswer++;
+
+            }
+
+        },
+        select_this(event, ID){
         //seleziono il primo (e unico) elemento input di tipo radio
-        event.currentTarget.querySelector("input[type='radio']").checked =!event.currentTarget.querySelector("input[type='radio']").checked;
+        event.currentTarget.querySelector("input[type='radio']").checked =true;
+        this.radioSel= ID;
+        
+        }
+    },
+    props: {
+        domanda: Object,
+        id: Number
+    },
+    data() {
+        return{
+            radioSel:"",
+            error: false,
+            wrongAnswer: 0
+
         }
     }
-
 }
 </script>
 
@@ -48,6 +76,10 @@ div#quiz h2{
 div#quiz h2#domanda{
     border-bottom: 20%;
 }
+p.error-message{
+    color:rgba(255,34,34, 1);
+
+}
 
 div.row{
     border-radius: 20px;
@@ -66,6 +98,7 @@ div#risposte{
 }
 div.row label{
     display: inline-block;
+    margin-right: 10px;
 }
 div#risposte .row, div#risposte .row label{
     cursor: pointer;
