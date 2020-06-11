@@ -73,5 +73,4 @@ Le varie versioni del player
     }]
   },
   ]
-}```
-````
+}````
