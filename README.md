@@ -1,7 +1,9 @@
 # Mistero-al-museo
 
 Per rendere le storie private il Prof ha consigliato di usare due archivi diversi. Uno pubblico e uno privato e spostare le storie da una parte all’altra.
+
 - [Trello](https://trello.com/b/SPRL2lMT/tecweb) utile per organizzare i compiti e le cose da fare
+
 ## STORIE
 
 - Più opzioni
@@ -28,49 +30,55 @@ Le varie versioni del player
 
 ## Possibile esempio file JSON
 
-````JSON
+`````JSON
 {
-"titolo":"Titolo storia",
-  "Descrizione": "Breve descrizione",
-  "Domande":[{
-    "ID": 1,
-    "Titolo":"Titolo domanda 1",
-    "Descrizione":"Descrizione domanda 1",
-    "Risposte":[{
-      "ID":1,
-      "titolo": "risposta 1 falsa",
-      "valore": false
+  titolo: "titolo storia",
+  descrizione: "Breve descrizione",
+  domande: [
+    {
+      ID: 1,
+      titolo: "titolo domanda 1",
+      descrizione: "Descrizione domanda 1",
+      risposte: [
+        {
+          ID: 0,
+          titolo: "risposta 1 falsa",
+          valore: false
+        },
+        {
+          ID: 1,
+          titolo: "risposta 2 falsa",
+          valore: false
+        },
+        {
+          ID: 2,
+          titolo: "risposta 3 vera",
+          valore: true
+        }
+      ]
     },
     {
-      "ID":2,
-      "titolo": "risposta 2 falsa",
-      "valore": false
-    },
-    {
-      "ID":3,
-      "titolo": "risposta 3 vera",
-      "valore": true
-    }]
-  },
-  {
-    "ID": 2,
-    "Titolo":"Titolo domanda 2",
-    "Descrizione":"Descrizione domanda 2",
-    "Risposte":[{
-      "ID":1,
-      "titolo": "risposta 1 falsa",
-      "valore": false
-    },
-    {
-      "ID":2,
-      "titolo": "risposta 2 vera",
-      "valore": true
-    },
-    {
-      "ID":3,
-      "titolo": "risposta 3 falsa",
-      "valore": false
-    }]
-  },
+      ID: 2,
+      titolo: "titolo domanda 2",
+      descrizione: "Descrizione domanda 2",
+      risposte: [
+        {
+          ID: 0,
+          titolo: "risposta 1 falsa",
+          valore: false
+        },
+        {
+          ID: 1,
+          titolo: "risposta 2 vera",
+          valore: true
+        },
+        {
+          ID: 2,
+          titolo: "risposta 3 falsa",
+          valore: false
+        }
+      ]
+    }
   ]
-}````
+}
+`````
