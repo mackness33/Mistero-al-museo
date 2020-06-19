@@ -25,8 +25,23 @@ Le varie versioni del player
 - V0.4
   - Aggiunta del caso **guardia arrabbiata** e un indicatore rabbia (?)
 - V0.5
+  - Aggiunta la possibilità di importare un file di stile (css) della pagina cosi da rendere ogni storia personale
+- V0.6
   - Interfacciarsi con API per prendere il file JSON **completo** (l'utente deve poter "giocare" anche **senza** internet)
   - Scopo: creare un sistema di interfacciatra back-end e front-end
+
+## Editior
+
+- V0.1
+  - Interfaccia semplice, è solo possibile creare domande con una dimensione prefissata di risposte.
+  - Scopo: sviluppare un semplice layout.
+- V0.2
+  - Maggore possibilità di personalizzare le storie (aggiunda di immagini, numero di risposte variabile).
+- V0.3
+  - Aggiunta la possibilità di caricare il css che modificherà la pagina di viualizzazione delle storie
+- V0.4
+  - Aggiunta la possibilità di aggiungere il caso **guardia arrabbiata**
+
 
 ## Possibile esempio file JSON
 
