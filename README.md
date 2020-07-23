@@ -27,7 +27,7 @@ Le varie versioni del player
 - V0.5
   - Aggiunta la possibilità di importare un file di stile (css) della pagina cosi da rendere ogni storia personale
 - V0.6
-  - Interfacciarsi con API per prendere il file JSON **completo** (l'utente deve poter "giocare" anche **senza** internet)
+  - Interfacciarsi con API per prendere il file JSON *completo* (l'utente deve poter "giocare" anche **senza** internet)
   - Scopo: creare un sistema di interfacciatra back-end e front-end
 
 ## Editior
@@ -41,7 +41,16 @@ Le varie versioni del player
   - Aggiunta la possibilità di caricare il css che modificherà la pagina di viualizzazione delle storie
 - V0.4
   - Aggiunta la possibilità di aggiungere il caso **guardia arrabbiata**
-
+  
+## API
+- V0.1
+  - Quando interrogato restituisce un file JSON (sempre uguale)
+- V0.2
+  - Associa un **hash** al file, quando interrogato restituisce il file corrispondente all'hash
+- V0.3
+  - Aggiunta la possibilità di caricare un file sul server
+- V0.4
+  - Organizzazione delle storie in gruppi tutti all'interno di cartelle (nome delle cartelle = hash)
 
 ## Possibile esempio file JSON
 
