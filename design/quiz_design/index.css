@@ -1,38 +1,45 @@
 /* font Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&&display=swap'); 
-*{
-    padding:0px;
-    border:0px;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&&display=swap');
+* {
+    padding: 0px;
+    border: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    
 }
-body{
+
+body {
     background-color: #252C4A;
 }
 
 
 /* ogni elemento è gestito da flexbox */
-div#quiz{
+
+div#quiz {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     align-content: center;
-    
 }
+
+
 /* contatore domande */
-div#quiz h2{  
+
+div#quiz h2 {
     color: #8D94BB;
     border-bottom: 2px dotted rgba(141, 148, 187, 0.2);
     padding-bottom: 10px;
 }
+
+
 /* titolo domande */
-div#quiz h2#domanda{
+
+div#quiz h2#domanda {
     border-bottom: 20%;
 }
 
-div.row{
+div.row {
     border-radius: 20px;
     padding: 15px;
     display: flex;
@@ -40,45 +47,64 @@ div.row{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    flex-grow: 1; /* in questo modo ogni riga occupa il massimo spazio disponibile*/ 
+    flex-grow: 1;
+    /* in questo modo ogni riga occupa il massimo spazio disponibile*/
 }
-div#risposte{
+
+div#risposte {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
 }
-div.row label{
+
+div.row label {
     display: inline-block;
 }
-div#risposte .row, div#risposte .row label{
+
+div#risposte .row,
+div#risposte .row label {
     cursor: pointer;
 }
-div.row input[type="radio"]{
+
+div.row input[type="radio"] {
     display: none;
 }
-div.row, .check{
+
+div.row,
+.check {
     border: 4px solid #23476A;
 }
+
 .check {
-	width: 25px; 
-	height: 25px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    margin-left: auto; /* l'icona è sempre a destra */
+    margin-left: auto;
+    /* l'icona è sempre a destra */
 }
-button#invia{
+
+button#invia {
     color: white;
     background-color: #117EEB;
     cursor: pointer;
     outline: 0;
     font-size: large;
     border-radius: 20px;
-    padding: 25px 50px;   
+    padding: 25px 50px;
 }
 
-button#invia:active, div.row:hover{
+button#invia:active,
+div.row:hover {
     opacity: 0.8;
 }
-div.row input[type="radio"]:checked + div{
+
+div.row input[type="radio"]:checked+div {
     background-color: #117EEB;
     border: 4px solid #117EEB;
+}
+
+img {
+    padding-bottom: 2rem;
+    max-width: 600px;
+    max-height: 600px;
 }
