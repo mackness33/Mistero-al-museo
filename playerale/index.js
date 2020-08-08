@@ -10,6 +10,6 @@ function inputTemplate() {
     var element = document.getElementById("demo");
     element.remove()
 
-    document.getElementsByClassName("quiz_answer")[1].innerHTML += "<button >Vero</button> <button >Falso</button>"
+    document.getElementsByClassName("quiz_answer")[0].innerHTML += "<button >Vero</button> <button >Falso</button>"
 
 }
