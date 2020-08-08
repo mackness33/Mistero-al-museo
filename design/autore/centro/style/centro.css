@@ -21,10 +21,19 @@ body{
 }
 div.container {
     display: flex;
+
     /*mostra gli elementi in riga e a capo*/
     flex-flow: row wrap;
+
+     /*gli elementi sono posti al centro 
+    dello schermo e tutto lo spazio bisnco rimasto 
+    viene usato come bordo esterno*/
     justify-content: center;
+    
+    /*Centro in base alla y dello schermo*/
     align-items: center;
+
+    align-content: center;
     /*Da rimuovere*/
     width: 100%;
     height:100vh;
@@ -34,19 +43,28 @@ div.container {
 div.element {
     /* Serve per mette al centro le icone */
     display: flex;
-    /*flex: 1 1 0px;*/
+
+    /*Causa errori*/
+    flex: 1 1 20%; 
+
+    /*ogni elemento viene inserito uno sotto l'altro*/
     flex-flow: column nowrap;
-    align-items: center;
+
+    /*imposta il testo all'interno dei rettangoli al centro*/
+    align-items: center; 
+
     border: 1px solid black;
     padding: .5em;
     margin: .3em;
-    flex-basis: 20%;
+    /* flex-basis: 20%; ogni elemento occupa il 20% dello spazio disponibile */
 
 }
 
 div.element i {
     align-self: center;
-    font-size: 5em;
+
+    /*dimensione dell' "immagine", viene trattata come fosse del testo*/
+    font-size: 5em; 
 }
 div.element p {
     text-align: center;
