@@ -32,7 +32,6 @@ div.container {
     
     /*Centro in base alla y dello schermo*/
     align-items: center;
-
     align-content: center;
     /*Da rimuovere*/
     width: 100%;
