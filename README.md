@@ -50,6 +50,7 @@ Le varie versioni del player
   - Aggiunta la possibilità di aggiungere il caso **guardia arrabbiata**
   
 ## API
+
 - V0.1
   - Quando interrogato restituisce un file JSON (sempre uguale)
 - V0.2
