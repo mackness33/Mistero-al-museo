@@ -1,0 +1,15 @@
+GET http://localhost:3000/storie/1
+
+###
+
+GET http://localhost:3000/storie/1?query=parametro
+
+###
+
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "title": "prova",
+    "id": 5
+}
