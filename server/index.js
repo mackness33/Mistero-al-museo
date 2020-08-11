@@ -1,5 +1,5 @@
 import Express from "express";
-import Story from "./story.js";
+import Story from "configuration";
 
 const app = Express();
 const port = 3000;
