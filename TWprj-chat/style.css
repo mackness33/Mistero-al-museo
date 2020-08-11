@@ -1,0 +1,55 @@
+
+/*stile del contenitore del form generale */
+.chat-popup{
+ position:fixed;
+  bottom:0;
+  right:0;
+  width:25%;
+background-color: red;
+}
+
+/* stile del bottone chiuso chat nel form */
+#chat-closed{
+color:steelBlue;
+  font-weight:bolder;
+  font-family: sans-serif;
+  width:100%;
+  height: 40px;
+  border: 1px solid steelBlue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor:pointer;
+  z-index:10;
+}
+/* bottone attivo */
+button:active{
+  background-color:darkCyan;
+  color:black !important;
+}
+.chat-open{
+  display:none;
+  background-color:AliceBlue;
+  color:steelBlue;
+  font-weight:bolder;
+  font-family: sans-serif;
+  text-align: center;
+  width:100%;
+  height: 250px;
+  margin-right:2px;
+  border: 1px solid steelBlue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  flex-direction:column;
+  flex:1;
+  z-index:10;
+
+}
+/*label Message della chat aperta */
+label[for="msg"]{
+  margin-top:5px;
+}
+/*placeholder e button send chat aperta */
+#bottom-chat{
+  margin-top:auto;
+  margin-bottom:5px;
+}
