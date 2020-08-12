@@ -1,0 +1,7 @@
+GET http://localhost:3000/api/v1/stories/33
+
+###
+
+#id giusto
+
+GET http://localhost:3000/api/v1/stories/AOVMBTP23PF3
