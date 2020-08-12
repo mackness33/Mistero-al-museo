@@ -5,26 +5,30 @@
   <title>chat-open</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="functions.js"></script>
+  <script src="funzioni.js" type="text/javascript">
+  </script>
 </head>
 <body>
   <!- da qui inizia la chat ->
 
-  <div class="chat-popup" id="chat">
+  <div class="container" id="chat">
+
+    <div id="chat-open">
+      <label for="msg">Messages</label>
+
+      <div id="bottom-chat">
+        <textarea rows="1" placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="btn" id="send">Send</button>
+      </div>
+    </div>
+
     <div class="chat-container">
 
-    <button type="button" class="chatClosed" id="chat-closed" onclick="openChat()">Chat</button>
+    <button type="button" class="chatClosed" id="chat-closed" onclick="chatOpen()">Chat</button>
 
-  <div class="chat-open">
-    <label for="msg">Message</label>
-    <div id="bottom-chat">
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-    <button type="submit" class="btn" id="send">Send</button>
-  </div>
-</div>
-
-<!- togliere ciò che segue ->
 </div>
   </div>
+
+
 </body>
 </html>
