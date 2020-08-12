@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .multiple_choice_wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .multiple_choice_option {
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 0.5em;
+            padding: 0.5em;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .multiple_choice_option label {
+            margin: 0.5em;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .multiple_choice_option input {
+            margin-right: 0.8em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class='multiple_choice_wrapper'>
+        <!--Per ora 4 risposte, vedere se in futuro dare completo controllo sul numero di risposte disponibili-->
+        <div class='multiple_choice_option'>
+            <label><input type='radio' name='option' id='answer1'>Risposta1</label>
+        </div>
+        <div class='multiple_choice_option'>
+            <label><input type='radio' name='option' id='answer2'>Risposta2</label>
+        </div>
+        <div class='multiple_choice_option'>
+            <label><input type='radio' name='option' id='answer3'>Risposta3</label>
+        </div>
+        <div class='multiple_choice_option'>
+            <label><input type='radio' name='option' id='answer4'>Risposta4</label>
+        </div>
+    </div>
+</body>
+
+</html>

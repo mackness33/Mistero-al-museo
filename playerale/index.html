@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <title>Mistero al Museo</title>
     <link rel="stylesheet" type="text/css" href="desktop.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="prev_next">
             <button id="prev_button" onclick="inputTemplate()">Prev</button>
+            <!--inputTemplate() è inserita in questo bottone esclusivamente per
+                 testare la funzione, in futuro il template della risposta verrà 
+                 determinato subito a partire dalla storia-->
             <!--aggiungere funzione nell'onclick-->
             <button id="next_button" onclick="">Next</button>
             <!--aggiungere funzione nell'onclick-->
@@ -23,14 +27,14 @@
                     velit, dignissimos dolores eveniet laborum, ipsa nostrum deleniti nihil? Id aperiam totam
                     cupiditate, qui nam voluptas incidunt!</p>
             </div>
-            <div class="quiz_answer">
+            <div class="quiz_answer" id="y">
                 <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, cupiditate.</p>
             </div>
             
         </div>
         <button id="confirm_button" onclick="">Controlla</button>
     </div>
-    <script type="text/javascript" src="index.js"></script>
+    
 </body>
 
 </html>
