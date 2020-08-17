@@ -1,7 +1,23 @@
-GET http://localhost:3000/api/v1/stories/33
+GET http://localhost:3000/api/v1/
 
 ###
 
-#id giusto
+GET http://localhost:3000/api/v1/stories/AOVMBTP23PF HTTP/1.1
 
-GET http://localhost:3000/api/v1/stories/AOVMBTP23PF3
+###
+
+DELETE http://localhost:3000/api/v1/stories/AOVMBTP23PF HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/stories HTTP/1.1
+content-type: application/json
+
+{
+    "ID": "AOVMBTP23P",
+    "title": "Quiz title",
+    "desc": "quiz description",
+    "style":"url css",
+    "age":"8-10",
+    "team":false
+}
