@@ -1,0 +1,20 @@
+{
+  "name": "group-chat.js",
+  "version": "1.0.0",
+  "description": "package for web chat",
+  "main": "chat-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mackness33/Mistero-al-museo.git/design-chat"
+  },
+  "author": "Elena Lippolis",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
