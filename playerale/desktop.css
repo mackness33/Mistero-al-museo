@@ -2,12 +2,15 @@
     margin: 0;
 }
 body {
-    /*background-color: #87BFFF;*/
     box-sizing: border-box;
     font-family: Montserrat;
     background-image: url(/images/background_for_desktop.jpg);
+    background-color: #012235;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;;
+    position: relative;
 }
 
 .wrapper {
@@ -47,7 +50,7 @@ button:hover {
     padding: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 60%;
 }
 
 .quiz_title {
@@ -55,9 +58,8 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
-    width: 40%;
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 3.5em;
     font-weight: bold;
     margin-bottom: 2em;
 }
@@ -79,3 +81,8 @@ button{
     color: #012235;
     font-weight: bold;
 }
+
+button {
+    font-size: 1.2em;
+}
+
