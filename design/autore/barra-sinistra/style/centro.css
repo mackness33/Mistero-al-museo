@@ -1,25 +1,27 @@
-
-h2 {
-    font-size: 1em;
-}
 body{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    background-color: var(--main-bg-color);
     /*Da rimuovere*/
     /*width: 100%;
     height:100vh;*/
     
 }
+
+h2 {
+    font-size: 1em;
+}
 div.centro {
+    align-self: flex-end;
     display: flex;
 
     /*mostra gli elementi in riga e a capo*/
     flex-flow: row wrap;
 
-     /*gli elementi sono posti al centro 
-    dello schermo e tutto lo spazio bisnco rimasto 
-    viene usato come bordo esterno*/
-    justify-content: space-evenly;
+    /* gli elementi sono posti al centro 
+    dello schermo e tutto lo spazio bianco rimasto 
+    viene usato come bordo esterno */
+    justify-content: center;
     
     /* Centro in base alla y dello schermo */
     align-items: center;
