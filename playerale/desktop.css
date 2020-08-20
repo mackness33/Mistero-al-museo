@@ -90,3 +90,40 @@ button {
     color: red;
     text-decoration: underline;
 }
+
+.multiple_choice_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.multiple_choice_option {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.multiple_choice_option label {
+    margin: 0.5em;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.multiple_choice_option input {
+    margin-right: 0.8em;
+}
+
+.true_or_false_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.true_or_false_wrapper button {
+    color: #C8C6C6;
+    background-color: #012235;
+}
+
+.answer_template {
+    display: none;
+}
