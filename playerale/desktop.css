@@ -4,7 +4,7 @@
 body {
     box-sizing: border-box;
     font-family: Montserrat;
-    background-image: url(/images/background_for_desktop.jpg);
+    background-image: url(./images/background_for_desktop.jpg);
     background-color: #012235;
     background-position: center center;
     background-repeat: no-repeat;

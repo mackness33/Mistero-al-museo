@@ -46,3 +46,5 @@ function control() {
     document.getElementById("error").innerHTML = "no answer";
   }
 }
+
+templateSwitcher();
