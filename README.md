@@ -4,8 +4,8 @@
 
 |API     |Player  |Autore|Valutatore|Storie|
 |--------|--------|------|----------|------|
-|David(?)|Ale     |Mattia|Elena     |Ale   |
-|Elena   |David(?)|Ale   |Mattia    |      |
+|David   |Ale     |Mattia|Elena     |Ale   |
+|Elena   |mattia  |Ale   |David     |      |
 
 Per rendere le storie private il Prof ha consigliato di usare due archivi diversi. Uno pubblico e uno privato e spostare le storie da una parte all’altra.
 
