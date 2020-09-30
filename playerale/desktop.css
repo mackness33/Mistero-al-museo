@@ -3,7 +3,7 @@
 }
 body {
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url(./images/background_for_desktop.jpg);
     background-color: #012235;
     background-position: center center;
@@ -79,7 +79,7 @@ button:hover {
 button{
     background-color: #C8C6C6;
     color: #012235;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 button {

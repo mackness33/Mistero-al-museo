@@ -6,7 +6,7 @@ var toBeChecked = "";//variabile da controllare attraverso il tasto Controlla
 function templateSwitcher(){
   $('.answer_template').hide(); //sets every template to display:none; probabilmente ridondante una volta che sarà fuori dal testing, in quanto già presente in desktop.css
   
-  var template = "multipleChoice"; //this variables is to be changed later, needs to take the string from JSON
+  var template = ""; //this variables is to be changed later, needs to take the string from JSON
   
   switch(template){
     case "trueOrFalse":
@@ -36,7 +36,7 @@ function multipleChoiceClick(answer){
   toBeChecked = string(answer);
 }
 
-
+// !!!!!!! modificare accesso al div di errore come nella funzione templateSwitcher()
 function control() {
   if (toBeChecked === "true"){
     document.getElementById("error").innerHTML = "Anwered true";
