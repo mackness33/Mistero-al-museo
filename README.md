@@ -1,1 +1,0 @@
-Design della chat da inserire nei vari ambienti; con z-index 10; togliere le parti da togliere da commento
