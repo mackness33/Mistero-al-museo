@@ -11,6 +11,7 @@ logger.level = process.env.LOG_LEVEL;
 let api = require("./routes/api");
 
 app.use(express.json());
+// ROUTE BASE
 app.use("/api/v1", api);
 
 app.listen(port, () => {
