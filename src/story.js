@@ -6,7 +6,7 @@ let story =[{
     "desc": "quiz description",
     "style":"url css",
     "age":"8-10",
-    "team":false    
+    "team":false
 },
 {
     "ID": "AOVMBTP23PF",
@@ -14,7 +14,7 @@ let story =[{
     "desc": "quiz description",
     "style":"url css",
     "age":"8-10",
-    "team":false    
+    "team":false
 }
 ]
 module.exports = story;
