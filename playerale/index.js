@@ -6,7 +6,7 @@ var toBeChecked = "";//variabile da controllare attraverso il tasto Controlla
 function templateSwitcher(){
   $('.answer_template').hide(); //sets every template to display:none; probabilmente ridondante una volta che sarà fuori dal testing, in quanto già presente in desktop.css
   
-  var template = ""; //this variables is to be changed later, needs to take the string from JSON
+  var template = "multipleChoice"; //this variables is to be changed later, needs to take the string from JSON
   
   switch(template){
     case "trueOrFalse":
@@ -27,13 +27,56 @@ function templateSwitcher(){
 //Nel caso del bottone Vero l'input è "true", altrimenti è "false"
 function trueOrFalseClick(answer){
   toBeChecked = answer;
+
+  //Resetting style on click 
+  document.getElementById("true").style.backgroundColor = "#012235"
+  document.getElementById("true").style.color = "#CF9C62"
+  document.getElementById("false").style.backgroundColor = "#012235"
+  document.getElementById("false").style.color = "#CF9C62"
+
+  //Highlight what has been clicked 
+  if(answer == "true") {
+    document.getElementById("true").style.backgroundColor = "#CF9C62"
+    document.getElementById("true").style.color = "#012235"
+  } else {
+    document.getElementById("false").style.backgroundColor = "#CF9C62"
+  document.getElementById("false").style.color = "#012235"
+  }
+
 }
 
 
 //prende in input un numero che dipende da quale risposta è stata selezionata
 //prima di aggiornare la variabile toBeChecked, rende il numero una stringa
 function multipleChoiceClick(answer){
-  toBeChecked = string(answer);
+  toBeChecked = answer;
+  toBeChecked.toString();
+  //Resetting style on click
+  elements = document.getElementsByClassName("multipleChoiceInput");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.backgroundColor = "#012235";
+    elements[i].style.color = "#CF9C62";
+  }
+
+  //Highlight what has been clicked 
+  switch(answer){
+    case 1:
+      document.getElementById("answer1").style.backgroundColor = "#CF9C62"
+      document.getElementById("answer1").style.color = "#012235"
+      break;
+    case 2:
+      document.getElementById("answer2").style.backgroundColor = "#CF9C62"
+      document.getElementById("answer2").style.color = "#012235"
+      break;
+    case 3:
+      document.getElementById("answer3").style.backgroundColor = "#CF9C62"
+      document.getElementById("answer3").style.color = "#012235"
+      break;
+    case 4:
+      document.getElementById("answer4").style.backgroundColor = "#CF9C62"
+      document.getElementById("answer4").style.color = "#012235"
+      break; 
+  }
 }
 
 // !!!!!!! modificare accesso al div di errore come nella funzione templateSwitcher()

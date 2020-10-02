@@ -1,0 +1,110 @@
+/* New design for desktop page*/
+
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #012235;
+    color: #ecf0f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.prev_next {
+    margin: 1em;
+    float: left;
+}
+
+button {
+    background-color: #012235;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: .7em;
+    padding: .5em;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:after {
+    background-color: green;
+}
+
+.quiz_form_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.quiz_title {
+    color: #CF9C62;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.quiz_text {
+    text-align: justify;
+}
+
+.quiz_answer,
+.quiz_text {
+    padding: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.8em;
+}
+
+.quiz_title {
+    padding: 1em;
+}
+
+#error {
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/*Design del template per type: "trueOrFalse"; */
+
+.true_or_false_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.true_or_false_wrapper button {
+    color: #CF9C62;
+}
+
+/*Design del template per type: "multipleChoice"; */
+
+.multiple_choice_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.multipleChoiceInput {
+    padding: 0.3em;
+    vertical-align: middle;
+    display: table-cell;
+    color: #CF9C62;
+}

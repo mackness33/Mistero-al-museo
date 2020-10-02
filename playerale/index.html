@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mistero al Museo</title>
-    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
 </head>
@@ -31,25 +31,27 @@
                 <div id="error"></div>
                 <div class="answer_template" id="trueOrFalse">
                     <div class='true_or_false_wrapper'>
-                        <button onclick="trueOrFalseClick('true')">Vero</button>
-                        <button onclick="trueOrFalseClick('false')">Falso</button>
+                        <button class="trueOrFalseButton" id="true" onclick="trueOrFalseClick('true')">Vero</button>
+                        <button class="trueOrFalseButton" id="false" onclick="trueOrFalseClick('false')">Falso</button>
                     </div>
                 </div>
                 <div class="answer_template" id="multipleChoice">
                     <div class='multiple_choice_wrapper'>
                         <!--Per ora 4 risposte, vedere se in futuro dare completo controllo sul numero di risposte disponibili-->
+                        
                         <div class='multiple_choice_option'>
-                            <label><input type='radio' name='option' id='answer1' onclick="multipleChoiceClick(1)">Risposta1</label>
+                            <button class="multipleChoiceInput" id='answer1' onclick="multipleChoiceClick(1)">Risposta Lunga Eterna 1</button>
                         </div>
                         <div class='multiple_choice_option'>
-                            <label><input type='radio' name='option' id='answer2' onclick="multipleChoiceClick(2)">Risposta2</label>
+                            <button class="multipleChoiceInput" id='answer2' onclick="multipleChoiceClick(2)">Risposta Lunga Eterna 2</button>                        
                         </div>
                         <div class='multiple_choice_option'>
-                            <label><input type='radio' name='option' id='answer3' onclick="multipleChoiceClick(3)">Risposta3</label>
+                            <button class="multipleChoiceInput" id='answer3' onclick="multipleChoiceClick(3)">Risposta Lunga Eterna 3</button>                       
                         </div>
                         <div class='multiple_choice_option'>
-                            <label><input type='radio' name='option' id='answer4' onclick="multipleChoiceClick(4)">Risposta4</label>
+                            <button class="multipleChoiceInput" id='answer4' onclick="multipleChoiceClick(4)">Risposta Lunga Eterna 4</button>                       
                         </div>
+
                 </div>
                 <div class="answer_template" id="">
                     

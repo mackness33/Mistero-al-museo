@@ -28,7 +28,7 @@ button {
     padding-right: 1.5em;
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     border-radius: .7em;
     border: none;
@@ -80,10 +80,6 @@ button{
     background-color: #C8C6C6;
     color: #012235;
     font-weight: bold; 
-}
-
-button {
-    font-size: 1.2em;
 }
 
 #error {
