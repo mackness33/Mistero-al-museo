@@ -6,17 +6,14 @@ var toBeChecked = "";//variabile da controllare attraverso il tasto Controlla
 function templateSwitcher(){
   $('.answer_template').hide(); //sets every template to display:none; probabilmente ridondante una volta che sarà fuori dal testing, in quanto già presente in desktop.css
   
-  var template = "multipleChoiceShort"; //this variables is to be changed later, needs to take the string from JSON
+  var template = "multipleChoice"; //this variables is to be changed later, needs to take the string from JSON
   
   switch(template){
     case "trueOrFalse":
       document.getElementById("trueOrFalse").style.display = "flex";
       break;
-    case "multipleChoiceShort":
-      document.getElementById("multipleChoiceShort").style.display = "flex";
-      break;
-    case "multipleChoiceLong":
-      document.getElementById("multipleChoiceLong").style.display = "flex";
+    case "multipleChoice":
+      document.getElementById("multipleChoice").style.display = "flex";
       break;
     case "custom":
       document.getElementById("custom").style.display = "block";
