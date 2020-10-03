@@ -30,35 +30,28 @@
             <div class="quiz_answer">
                 <div id="error"></div>
                 <div class="answer_template" id="trueOrFalse">
-                    <div class='true_or_false_wrapper'>
                         <button class="trueOrFalseButton" id="true" onclick="trueOrFalseClick('true')">Vero</button>
                         <button class="trueOrFalseButton" id="false" onclick="trueOrFalseClick('false')">Falso</button>
+                </div>
+                <div class="answer_template" id="multipleChoiceLong">
+                    <div class='multiple_choice_long_answer_wrapper'>
+                        <button class="multipleChoiceLongInput" id='answer1' onclick="multipleChoiceClick(1, 1)">Risposta Lunga Eterna 1</button>  
+                        <button class="multipleChoiceLongInput" id='answer2' onclick="multipleChoiceClick(2, 1)">Risposta Lunga Eterna 2</button>                                               
+                        <button class="multipleChoiceLongInput" id='answer3' onclick="multipleChoiceClick(3, 1)">Risposta Lunga Eterna 3</button>                                           
+                        <button class="multipleChoiceLongInput" id='answer4' onclick="multipleChoiceClick(4, 1)">Risposta Lunga Eterna 4</button>                                            
                     </div>
                 </div>
-                <div class="answer_template" id="multipleChoice">
-                    <div class='multiple_choice_wrapper'>
-                        <!--Per ora 4 risposte, vedere se in futuro dare completo controllo sul numero di risposte disponibili-->
-                        
-                        <div class='multiple_choice_option'>
-                            <button class="multipleChoiceInput" id='answer1' onclick="multipleChoiceClick(1)">Risposta Lunga Eterna 1</button>
-                        </div>
-                        <div class='multiple_choice_option'>
-                            <button class="multipleChoiceInput" id='answer2' onclick="multipleChoiceClick(2)">Risposta Lunga Eterna 2</button>                        
-                        </div>
-                        <div class='multiple_choice_option'>
-                            <button class="multipleChoiceInput" id='answer3' onclick="multipleChoiceClick(3)">Risposta Lunga Eterna 3</button>                       
-                        </div>
-                        <div class='multiple_choice_option'>
-                            <button class="multipleChoiceInput" id='answer4' onclick="multipleChoiceClick(4)">Risposta Lunga Eterna 4</button>                       
-                        </div>
-
+                <div class="answer_template" id="multipleChoiceShort">                                           
+                    <button class="multipleChoiceShortInput" id='answerShort1' onclick="multipleChoiceClick(1, 2)">Risposta1</button>                       
+                    <button class="multipleChoiceShortInput" id='answerShort2' onclick="multipleChoiceClick(2, 2)">Risposta2</button>                                             
+                    <button class="multipleChoiceShortInput" id='answerShort3' onclick="multipleChoiceClick(3, 2)">Risposta3</button>                                           
+                    <button class="multipleChoiceShortInput" id='answerShort4' onclick="multipleChoiceClick(4, 2)">Risposta4</button>                                             
                 </div>
-                <div class="answer_template" id="">
-                    
+                <div class="answer_template" id="custom">
+                    <!--Riempito con HTML dell'autore-->
                 </div>
             </div>
         </div>
-        <button id="confirm_button" onclick="control()">Controlla</button>
     </div>
     
     <script type="text/javascript" src="index.js"></script>

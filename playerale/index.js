@@ -6,14 +6,20 @@ var toBeChecked = "";//variabile da controllare attraverso il tasto Controlla
 function templateSwitcher(){
   $('.answer_template').hide(); //sets every template to display:none; probabilmente ridondante una volta che sarà fuori dal testing, in quanto già presente in desktop.css
   
-  var template = "multipleChoice"; //this variables is to be changed later, needs to take the string from JSON
+  var template = "multipleChoiceShort"; //this variables is to be changed later, needs to take the string from JSON
   
   switch(template){
     case "trueOrFalse":
-      document.getElementById("trueOrFalse").style.display = "block";
+      document.getElementById("trueOrFalse").style.display = "flex";
       break;
-    case "multipleChoice":
-      document.getElementById("multipleChoice").style.display = "block";
+    case "multipleChoiceShort":
+      document.getElementById("multipleChoiceShort").style.display = "flex";
+      break;
+    case "multipleChoiceLong":
+      document.getElementById("multipleChoiceLong").style.display = "flex";
+      break;
+    case "custom":
+      document.getElementById("custom").style.display = "block";
       break;
     default:
       document.getElementById("error").innerHTML = "Errore nel caricare la selezione della risposta";
@@ -48,17 +54,24 @@ function trueOrFalseClick(answer){
 
 //prende in input un numero che dipende da quale risposta è stata selezionata
 //prima di aggiornare la variabile toBeChecked, rende il numero una stringa
-function multipleChoiceClick(answer){
+//type = 1 (multipleChoiceShort), type = 2 (multipleChoiceLong)
+function multipleChoiceClick(answer, type){
   toBeChecked = answer;
   toBeChecked.toString();
   //Resetting style on click
-  elements = document.getElementsByClassName("multipleChoiceInput");
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = "#012235";
-    elements[i].style.color = "#CF9C62";
+  if (type == 1){
+    elements = document.getElementsByClassName("multipleChoiceLongInput");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.backgroundColor = "#012235";
+      elements[i].style.color = "#CF9C62";
+    }
+  } else {
+    elements = document.getElementsByClassName("multipleChoiceShortInput");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.backgroundColor = "#012235";
+      elements[i].style.color = "#CF9C62";
+    }
   }
-
-  //Highlight what has been clicked 
   switch(answer){
     case 1:
       document.getElementById("answer1").style.backgroundColor = "#CF9C62"
@@ -77,6 +90,9 @@ function multipleChoiceClick(answer){
       document.getElementById("answer4").style.color = "#012235"
       break; 
   }
+
+  //Highlight what has been clicked 
+  
 }
 
 // !!!!!!! modificare accesso al div di errore come nella funzione templateSwitcher()

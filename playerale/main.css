@@ -83,7 +83,7 @@ button:after {
 
 /*Design del template per type: "trueOrFalse"; */
 
-.true_or_false_wrapper {
+#trueOrFalse {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
@@ -91,20 +91,21 @@ button:after {
     margin-right: auto;
 }
 
-.true_or_false_wrapper button {
+#trueOrFalse button {
     color: #CF9C62;
 }
 
-/*Design del template per type: "multipleChoice"; */
+/*Design del template per type: "multipleChoiceShort"; */
 
-.multiple_choice_wrapper {
+#multipleChoiceShort {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.multipleChoiceInput {
-    padding: 0.3em;
-    vertical-align: middle;
-    display: table-cell;
+#multipleChoiceShort button {
+    padding: .3em;
     color: #CF9C62;
 }
