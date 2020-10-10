@@ -7,7 +7,7 @@
 body {
     background-color: #012235;
     color: #ecf0f1;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', serif, sans-serif;
 }
 
 .wrapper {
@@ -95,7 +95,7 @@ button:after {
     color: #CF9C62;
 }
 
-/*Design del template per type: "multipleChoiceShort"; */
+/*Design del template per type: "multipleChoice"; */
 
 #multipleChoice {
     display: flex;
@@ -109,12 +109,54 @@ button:after {
     padding: .3em;
     color: #CF9C62;
     border-radius: .3em;
+    font-weight: 600;
+}
+
+#multipleChoice label:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 input[type="radio"]:checked + label{
+    /*Quando è cliccato inverte i colori per rendere evidente quale opzione è selezionata*/
     background-color: #CF9C62;
     color: #012235 !important;
 }
 .radio_choice{
     display: none;
+}
+
+/*Design del template per type: "openAnswer"; */
+
+textarea {
+    width: 100%;
+    height: 80%;
+    padding: 1.3rem 1.5rem;
+    box-sizing: border-box;
+    border: 3px solid #CF9C62;
+    border-radius: .6rem;
+    outline: none;
+    background-color: #012235;
+    resize: none;
+    color: #ecf0f1;
+    font-family: inherit;
+    font-size: .8em;
+    text-align: justify;
+    overflow: auto;
+    line-height: 1.5em;
+}
+
+textarea::-webkit-scrollbar {
+    width: .5em;
+    margin: .1em;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    border-radius: .6rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #CF9C62;
+  border-radius: .8rem;
 }

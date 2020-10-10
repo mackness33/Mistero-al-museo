@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mistero al Museo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
@@ -12,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="prev_next">
-            <button id="prev_button" onclick="templateSwitcher()">Prev</button>
+            <button id="prev_button" onclick="">Prev</button>
             <!--inputTemplate() è inserita in questo bottone esclusivamente per
                  testare la funzione, in futuro il template della risposta verrà 
                  determinato subito a partire dalla storia-->
@@ -35,10 +36,15 @@
                 </div>
                 
                 <div class="answer_template" id="multipleChoice">                                           
-                    <input type="radio" name="answer" value="answer1" id="answer1" class="radio_choice"><label for ="answer1" class="multipleChoiceShortInput" id='answerShort1'>Risposta1</label>                                                                                   
-                    <input type="radio" name="answer" value="answer2" id="answer2" class="radio_choice"><label for ="answer2" class="multipleChoiceShortInput" id='answerShort1'>Risposta2</label>                                                                                     
-                    <input type="radio" name="answer" value="answer3" id="answer3" class="radio_choice"><label for ="answer3" class="multipleChoiceShortInput" id='answerShort1'>Risposta3</label>                                                                                     
-                    <input type="radio" name="answer" value="answer4" id="answer4" class="radio_choice"><label for ="answer4" class="multipleChoiceShortInput" id='answerShort1'>Risposta4</label>                                                                                     
+                    <input type="radio" name="answer" value="answer1" id="answer1" class="radio_choice"><label for ="answer1" class="multipleChoiceShortInput" id='answerShort1'>Risposta 1</label>                                                                                   
+                    <input type="radio" name="answer" value="answer2" id="answer2" class="radio_choice"><label for ="answer2" class="multipleChoiceShortInput" id='answerShort1'>Risposta 2</label>                                                                                     
+                    <input type="radio" name="answer" value="answer3" id="answer3" class="radio_choice"><label for ="answer3" class="multipleChoiceShortInput" id='answerShort1'>Risposta 3</label>                                                                                     
+                    <input type="radio" name="answer" value="answer4" id="answer4" class="radio_choice"><label for ="answer4" class="multipleChoiceShortInput" id='answerShort1'>Risposta 4</label>                                                                                     
+                </div>
+
+                <div class="answer_template" id="openAnswer">
+                    
+                <textarea name="openAnswerTextArea" id="openAnswerTextArea" cols="30" rows="10" placeholder="Inserisci il testo..."></textarea>
                 </div>
                 <div class="answer_template" id="custom">
                     <!--Riempito con HTML dell'autore-->
