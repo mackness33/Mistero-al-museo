@@ -17,6 +17,29 @@ try {
 
   const db = mongoose.connection;
 
+  const { Schema } = mongoose;
+
+  // define a schema
+  const userSchema = new Schema({
+    _id: Number,
+    name:  {
+      first: String,
+      second: String
+    },
+    age: Number,  // Number is shorthand for {type: Number}
+    male: Boolean
+  });
+
+  // compile our model
+  const User = mongoose.model('User', userSchema);
+
+  // create a document
+   const first_user = new User({
+     name: { first: 'Axl', last: 'Rose' }
+   });
+
+   logger.info(`Create the first document`);
+
 } catch (error) {
   logger.info(`ERROR: ${error}`);
 }
